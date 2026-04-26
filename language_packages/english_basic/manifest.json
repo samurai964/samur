@@ -1,0 +1,729 @@
+{
+    "package_name": "english_basic",
+    "language_code": "en",
+    "name": "English",
+    "native_name": "English",
+    "version": "1.0.0",
+    "author": "Final Max CMS Team",
+    "author_email": "support@finalmaxcms.com",
+    "website": "https://finalmaxcms.com",
+    "description": "Basic English language package for Final Max CMS",
+    "flag_icon": "flag-us",
+    "direction": "ltr",
+    "min_cms_version": "1.0.0",
+    "min_php_version": "7.4.0",
+    "required_extensions": [],
+    "is_official": true,
+    "groups": {
+        "common": {
+            "name": "Common Terms",
+            "description": "Common terms used throughout the system",
+            "module": "core"
+        },
+        "navigation": {
+            "name": "Navigation",
+            "description": "Navigation menu items and links",
+            "module": "core"
+        },
+        "forms": {
+            "name": "Forms",
+            "description": "Form labels, buttons, and validation messages",
+            "module": "core"
+        },
+        "auth": {
+            "name": "Authentication",
+            "description": "Login, registration, and authentication messages",
+            "module": "auth"
+        },
+        "user": {
+            "name": "User Management",
+            "description": "User profile and management terms",
+            "module": "user"
+        },
+        "content": {
+            "name": "Content Management",
+            "description": "Content creation and management terms",
+            "module": "content"
+        },
+        "admin": {
+            "name": "Administration",
+            "description": "Admin panel terms and messages",
+            "module": "admin"
+        },
+        "errors": {
+            "name": "Error Messages",
+            "description": "Error and validation messages",
+            "module": "core"
+        },
+        "success": {
+            "name": "Success Messages",
+            "description": "Success and confirmation messages",
+            "module": "core"
+        },
+        "email": {
+            "name": "Email Templates",
+            "description": "Email template content and subjects",
+            "module": "email"
+        }
+    },
+    "translations": {
+        "common": {
+            "home": {
+                "value": "Home",
+                "description": "Home page link",
+                "context": "navigation"
+            },
+            "about": {
+                "value": "About",
+                "description": "About page link",
+                "context": "navigation"
+            },
+            "contact": {
+                "value": "Contact",
+                "description": "Contact page link",
+                "context": "navigation"
+            },
+            "search": {
+                "value": "Search",
+                "description": "Search button/placeholder",
+                "context": "form"
+            },
+            "save": {
+                "value": "Save",
+                "description": "Save button",
+                "context": "form"
+            },
+            "cancel": {
+                "value": "Cancel",
+                "description": "Cancel button",
+                "context": "form"
+            },
+            "delete": {
+                "value": "Delete",
+                "description": "Delete button",
+                "context": "form"
+            },
+            "edit": {
+                "value": "Edit",
+                "description": "Edit button",
+                "context": "form"
+            },
+            "view": {
+                "value": "View",
+                "description": "View button",
+                "context": "form"
+            },
+            "back": {
+                "value": "Back",
+                "description": "Back button",
+                "context": "navigation"
+            },
+            "next": {
+                "value": "Next",
+                "description": "Next button",
+                "context": "navigation"
+            },
+            "previous": {
+                "value": "Previous",
+                "description": "Previous button",
+                "context": "navigation"
+            },
+            "loading": {
+                "value": "Loading...",
+                "description": "Loading message",
+                "context": "status"
+            },
+            "yes": {
+                "value": "Yes",
+                "description": "Yes option",
+                "context": "form"
+            },
+            "no": {
+                "value": "No",
+                "description": "No option",
+                "context": "form"
+            },
+            "welcome": {
+                "value": "Welcome",
+                "description": "Welcome message",
+                "context": "greeting"
+            },
+            "language": {
+                "value": "Language",
+                "description": "Language label",
+                "context": "settings"
+            },
+            "settings": {
+                "value": "Settings",
+                "description": "Settings menu",
+                "context": "navigation"
+            },
+            "profile": {
+                "value": "Profile",
+                "description": "User profile",
+                "context": "user"
+            },
+            "logout": {
+                "value": "Logout",
+                "description": "Logout button",
+                "context": "auth"
+            },
+            "login": {
+                "value": "Login",
+                "description": "Login button",
+                "context": "auth"
+            },
+            "register": {
+                "value": "Register",
+                "description": "Register button",
+                "context": "auth"
+            },
+            "submit": {
+                "value": "Submit",
+                "description": "Submit button",
+                "context": "form"
+            },
+            "close": {
+                "value": "Close",
+                "description": "Close button",
+                "context": "form"
+            },
+            "open": {
+                "value": "Open",
+                "description": "Open button",
+                "context": "form"
+            },
+            "create": {
+                "value": "Create",
+                "description": "Create button",
+                "context": "form"
+            },
+            "update": {
+                "value": "Update",
+                "description": "Update button",
+                "context": "form"
+            },
+            "remove": {
+                "value": "Remove",
+                "description": "Remove button",
+                "context": "form"
+            },
+            "add": {
+                "value": "Add",
+                "description": "Add button",
+                "context": "form"
+            },
+            "select": {
+                "value": "Select",
+                "description": "Select option",
+                "context": "form"
+            },
+            "choose": {
+                "value": "Choose",
+                "description": "Choose option",
+                "context": "form"
+            },
+            "upload": {
+                "value": "Upload",
+                "description": "Upload button",
+                "context": "form"
+            },
+            "download": {
+                "value": "Download",
+                "description": "Download button",
+                "context": "form"
+            },
+            "print": {
+                "value": "Print",
+                "description": "Print button",
+                "context": "form"
+            },
+            "share": {
+                "value": "Share",
+                "description": "Share button",
+                "context": "social"
+            },
+            "copy": {
+                "value": "Copy",
+                "description": "Copy button",
+                "context": "form"
+            },
+            "paste": {
+                "value": "Paste",
+                "description": "Paste button",
+                "context": "form"
+            },
+            "cut": {
+                "value": "Cut",
+                "description": "Cut button",
+                "context": "form"
+            },
+            "undo": {
+                "value": "Undo",
+                "description": "Undo button",
+                "context": "form"
+            },
+            "redo": {
+                "value": "Redo",
+                "description": "Redo button",
+                "context": "form"
+            },
+            "refresh": {
+                "value": "Refresh",
+                "description": "Refresh button",
+                "context": "form"
+            },
+            "reload": {
+                "value": "Reload",
+                "description": "Reload button",
+                "context": "form"
+            },
+            "reset": {
+                "value": "Reset",
+                "description": "Reset button",
+                "context": "form"
+            },
+            "clear": {
+                "value": "Clear",
+                "description": "Clear button",
+                "context": "form"
+            },
+            "filter": {
+                "value": "Filter",
+                "description": "Filter button",
+                "context": "form"
+            },
+            "sort": {
+                "value": "Sort",
+                "description": "Sort button",
+                "context": "form"
+            },
+            "export": {
+                "value": "Export",
+                "description": "Export button",
+                "context": "form"
+            },
+            "import": {
+                "value": "Import",
+                "description": "Import button",
+                "context": "form"
+            }
+        },
+        "navigation": {
+            "main_menu": {
+                "value": "Main Menu",
+                "description": "Main navigation menu",
+                "context": "navigation"
+            },
+            "dashboard": {
+                "value": "Dashboard",
+                "description": "Dashboard page",
+                "context": "navigation"
+            },
+            "categories": {
+                "value": "Categories",
+                "description": "Categories page",
+                "context": "navigation"
+            },
+            "topics": {
+                "value": "Topics",
+                "description": "Topics page",
+                "context": "navigation"
+            },
+            "users": {
+                "value": "Users",
+                "description": "Users page",
+                "context": "navigation"
+            },
+            "content": {
+                "value": "Content",
+                "description": "Content page",
+                "context": "navigation"
+            },
+            "media": {
+                "value": "Media",
+                "description": "Media page",
+                "context": "navigation"
+            },
+            "comments": {
+                "value": "Comments",
+                "description": "Comments page",
+                "context": "navigation"
+            },
+            "reports": {
+                "value": "Reports",
+                "description": "Reports page",
+                "context": "navigation"
+            },
+            "analytics": {
+                "value": "Analytics",
+                "description": "Analytics page",
+                "context": "navigation"
+            },
+            "tools": {
+                "value": "Tools",
+                "description": "Tools page",
+                "context": "navigation"
+            },
+            "help": {
+                "value": "Help",
+                "description": "Help page",
+                "context": "navigation"
+            },
+            "documentation": {
+                "value": "Documentation",
+                "description": "Documentation page",
+                "context": "navigation"
+            },
+            "support": {
+                "value": "Support",
+                "description": "Support page",
+                "context": "navigation"
+            },
+            "privacy": {
+                "value": "Privacy",
+                "description": "Privacy page",
+                "context": "navigation"
+            },
+            "terms": {
+                "value": "Terms",
+                "description": "Terms page",
+                "context": "navigation"
+            }
+        },
+        "forms": {
+            "name": {
+                "value": "Name",
+                "description": "Name field label",
+                "context": "form"
+            },
+            "email": {
+                "value": "Email",
+                "description": "Email field label",
+                "context": "form"
+            },
+            "password": {
+                "value": "Password",
+                "description": "Password field label",
+                "context": "form"
+            },
+            "confirm_password": {
+                "value": "Confirm Password",
+                "description": "Confirm password field label",
+                "context": "form"
+            },
+            "username": {
+                "value": "Username",
+                "description": "Username field label",
+                "context": "form"
+            },
+            "phone": {
+                "value": "Phone",
+                "description": "Phone field label",
+                "context": "form"
+            },
+            "address": {
+                "value": "Address",
+                "description": "Address field label",
+                "context": "form"
+            },
+            "city": {
+                "value": "City",
+                "description": "City field label",
+                "context": "form"
+            },
+            "country": {
+                "value": "Country",
+                "description": "Country field label",
+                "context": "form"
+            },
+            "date": {
+                "value": "Date",
+                "description": "Date field label",
+                "context": "form"
+            },
+            "time": {
+                "value": "Time",
+                "description": "Time field label",
+                "context": "form"
+            },
+            "title": {
+                "value": "Title",
+                "description": "Title field label",
+                "context": "form"
+            },
+            "description": {
+                "value": "Description",
+                "description": "Description field label",
+                "context": "form"
+            },
+            "content": {
+                "value": "Content",
+                "description": "Content field label",
+                "context": "form"
+            },
+            "category": {
+                "value": "Category",
+                "description": "Category field label",
+                "context": "form"
+            },
+            "tags": {
+                "value": "Tags",
+                "description": "Tags field label",
+                "context": "form"
+            },
+            "image": {
+                "value": "Image",
+                "description": "Image field label",
+                "context": "form"
+            },
+            "file": {
+                "value": "File",
+                "description": "File field label",
+                "context": "form"
+            },
+            "url": {
+                "value": "URL",
+                "description": "URL field label",
+                "context": "form"
+            },
+            "website": {
+                "value": "Website",
+                "description": "Website field label",
+                "context": "form"
+            },
+            "required": {
+                "value": "Required",
+                "description": "Required field indicator",
+                "context": "form"
+            },
+            "optional": {
+                "value": "Optional",
+                "description": "Optional field indicator",
+                "context": "form"
+            },
+            "placeholder_search": {
+                "value": "Search...",
+                "description": "Search field placeholder",
+                "context": "form"
+            },
+            "placeholder_email": {
+                "value": "Enter your email",
+                "description": "Email field placeholder",
+                "context": "form"
+            },
+            "placeholder_password": {
+                "value": "Enter your password",
+                "description": "Password field placeholder",
+                "context": "form"
+            }
+        },
+        "auth": {
+            "login_title": {
+                "value": "Login to Your Account",
+                "description": "Login page title",
+                "context": "auth"
+            },
+            "register_title": {
+                "value": "Create New Account",
+                "description": "Register page title",
+                "context": "auth"
+            },
+            "forgot_password": {
+                "value": "Forgot Password?",
+                "description": "Forgot password link",
+                "context": "auth"
+            },
+            "reset_password": {
+                "value": "Reset Password",
+                "description": "Reset password title",
+                "context": "auth"
+            },
+            "remember_me": {
+                "value": "Remember Me",
+                "description": "Remember me checkbox",
+                "context": "auth"
+            },
+            "login_success": {
+                "value": "Login successful! Welcome back.",
+                "description": "Login success message",
+                "context": "auth"
+            },
+            "login_failed": {
+                "value": "Login failed. Please check your credentials.",
+                "description": "Login failed message",
+                "context": "auth"
+            },
+            "register_success": {
+                "value": "Registration successful! Please check your email to verify your account.",
+                "description": "Registration success message",
+                "context": "auth"
+            },
+            "logout_success": {
+                "value": "You have been logged out successfully.",
+                "description": "Logout success message",
+                "context": "auth"
+            },
+            "account_locked": {
+                "value": "Your account has been locked due to multiple failed login attempts.",
+                "description": "Account locked message",
+                "context": "auth"
+            },
+            "email_verification_required": {
+                "value": "Please verify your email address to continue.",
+                "description": "Email verification required message",
+                "context": "auth"
+            },
+            "password_reset_sent": {
+                "value": "Password reset instructions have been sent to your email.",
+                "description": "Password reset sent message",
+                "context": "auth"
+            },
+            "password_reset_success": {
+                "value": "Your password has been reset successfully.",
+                "description": "Password reset success message",
+                "context": "auth"
+            },
+            "invalid_token": {
+                "value": "Invalid or expired token.",
+                "description": "Invalid token message",
+                "context": "auth"
+            },
+            "access_denied": {
+                "value": "Access denied. You don't have permission to view this page.",
+                "description": "Access denied message",
+                "context": "auth"
+            }
+        },
+        "errors": {
+            "error_404": {
+                "value": "Page Not Found",
+                "description": "404 error message",
+                "context": "error"
+            },
+            "error_500": {
+                "value": "Internal Server Error",
+                "description": "500 error message",
+                "context": "error"
+            },
+            "error_403": {
+                "value": "Access Forbidden",
+                "description": "403 error message",
+                "context": "error"
+            },
+            "validation_required": {
+                "value": "This field is required.",
+                "description": "Required field validation",
+                "context": "validation"
+            },
+            "validation_email": {
+                "value": "Please enter a valid email address.",
+                "description": "Email validation message",
+                "context": "validation"
+            },
+            "validation_password_min": {
+                "value": "Password must be at least 8 characters long.",
+                "description": "Password minimum length validation",
+                "context": "validation"
+            },
+            "validation_password_match": {
+                "value": "Passwords do not match.",
+                "description": "Password match validation",
+                "context": "validation"
+            },
+            "validation_file_size": {
+                "value": "File size exceeds the maximum allowed limit.",
+                "description": "File size validation",
+                "context": "validation"
+            },
+            "validation_file_type": {
+                "value": "Invalid file type. Please select a valid file.",
+                "description": "File type validation",
+                "context": "validation"
+            },
+            "database_error": {
+                "value": "Database connection error. Please try again later.",
+                "description": "Database error message",
+                "context": "error"
+            },
+            "network_error": {
+                "value": "Network error. Please check your internet connection.",
+                "description": "Network error message",
+                "context": "error"
+            },
+            "timeout_error": {
+                "value": "Request timeout. Please try again.",
+                "description": "Timeout error message",
+                "context": "error"
+            },
+            "permission_denied": {
+                "value": "You don't have permission to perform this action.",
+                "description": "Permission denied message",
+                "context": "error"
+            }
+        },
+        "success": {
+            "save_success": {
+                "value": "Data saved successfully.",
+                "description": "Save success message",
+                "context": "success"
+            },
+            "update_success": {
+                "value": "Data updated successfully.",
+                "description": "Update success message",
+                "context": "success"
+            },
+            "delete_success": {
+                "value": "Data deleted successfully.",
+                "description": "Delete success message",
+                "context": "success"
+            },
+            "upload_success": {
+                "value": "File uploaded successfully.",
+                "description": "Upload success message",
+                "context": "success"
+            },
+            "email_sent": {
+                "value": "Email sent successfully.",
+                "description": "Email sent message",
+                "context": "success"
+            },
+            "changes_saved": {
+                "value": "Your changes have been saved.",
+                "description": "Changes saved message",
+                "context": "success"
+            },
+            "operation_completed": {
+                "value": "Operation completed successfully.",
+                "description": "Operation completed message",
+                "context": "success"
+            },
+            "profile_updated": {
+                "value": "Your profile has been updated successfully.",
+                "description": "Profile updated message",
+                "context": "success"
+            },
+            "settings_saved": {
+                "value": "Settings saved successfully.",
+                "description": "Settings saved message",
+                "context": "success"
+            },
+            "backup_created": {
+                "value": "Backup created successfully.",
+                "description": "Backup created message",
+                "context": "success"
+            }
+        }
+    },
+    "additional_files": [
+        {
+            "source": "css/rtl.css",
+            "destination": "assets/css/languages/en-rtl.css"
+        },
+        {
+            "source": "js/language.js",
+            "destination": "assets/js/languages/en.js"
+        }
+    ]
+}
+

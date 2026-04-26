@@ -1,0 +1,443 @@
+/* English Language CSS - Left to Right (LTR) Support */
+
+/* Reset RTL styles for English */
+[lang="en"], [dir="ltr"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Navigation adjustments for LTR */
+[lang="en"] .nav-menu,
+[dir="ltr"] .nav-menu {
+    text-align: left;
+}
+
+[lang="en"] .nav-menu li,
+[dir="ltr"] .nav-menu li {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+[lang="en"] .nav-menu li:last-child,
+[dir="ltr"] .nav-menu li:last-child {
+    margin-right: 0;
+}
+
+/* Form adjustments for LTR */
+[lang="en"] .form-group label,
+[dir="ltr"] .form-group label {
+    text-align: left;
+}
+
+[lang="en"] .form-control,
+[dir="ltr"] .form-control {
+    text-align: left;
+}
+
+[lang="en"] .checkbox,
+[lang="en"] .radio,
+[dir="ltr"] .checkbox,
+[dir="ltr"] .radio {
+    text-align: left;
+}
+
+[lang="en"] .checkbox input,
+[lang="en"] .radio input,
+[dir="ltr"] .checkbox input,
+[dir="ltr"] .radio input {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/* Button alignments for LTR */
+[lang="en"] .btn-group,
+[dir="ltr"] .btn-group {
+    text-align: left;
+}
+
+[lang="en"] .btn-group .btn:first-child,
+[dir="ltr"] .btn-group .btn:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+[lang="en"] .btn-group .btn:last-child,
+[dir="ltr"] .btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Table adjustments for LTR */
+[lang="en"] .table th,
+[lang="en"] .table td,
+[dir="ltr"] .table th,
+[dir="ltr"] .table td {
+    text-align: left;
+}
+
+[lang="en"] .table th:first-child,
+[lang="en"] .table td:first-child,
+[dir="ltr"] .table th:first-child,
+[dir="ltr"] .table td:first-child {
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+[lang="en"] .table th:last-child,
+[lang="en"] .table td:last-child,
+[dir="ltr"] .table th:last-child,
+[dir="ltr"] .table td:last-child {
+    padding-right: 15px;
+    padding-left: 8px;
+}
+
+/* Sidebar adjustments for LTR */
+[lang="en"] .sidebar,
+[dir="ltr"] .sidebar {
+    left: 0;
+    right: auto;
+}
+
+[lang="en"] .main-content,
+[dir="ltr"] .main-content {
+    margin-left: 250px;
+    margin-right: 0;
+}
+
+/* Dropdown adjustments for LTR */
+[lang="en"] .dropdown-menu,
+[dir="ltr"] .dropdown-menu {
+    left: 0;
+    right: auto;
+    text-align: left;
+}
+
+[lang="en"] .dropdown-menu li a,
+[dir="ltr"] .dropdown-menu li a {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Breadcrumb adjustments for LTR */
+[lang="en"] .breadcrumb,
+[dir="ltr"] .breadcrumb {
+    text-align: left;
+}
+
+[lang="en"] .breadcrumb li:after,
+[dir="ltr"] .breadcrumb li:after {
+    content: "/";
+    margin: 0 5px 0 8px;
+}
+
+[lang="en"] .breadcrumb li:last-child:after,
+[dir="ltr"] .breadcrumb li:last-child:after {
+    content: "";
+    margin: 0;
+}
+
+/* Pagination adjustments for LTR */
+[lang="en"] .pagination,
+[dir="ltr"] .pagination {
+    text-align: left;
+}
+
+[lang="en"] .pagination li:first-child a,
+[dir="ltr"] .pagination li:first-child a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+[lang="en"] .pagination li:last-child a,
+[dir="ltr"] .pagination li:last-child a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Modal adjustments for LTR */
+[lang="en"] .modal-header,
+[lang="en"] .modal-body,
+[lang="en"] .modal-footer,
+[dir="ltr"] .modal-header,
+[dir="ltr"] .modal-body,
+[dir="ltr"] .modal-footer {
+    text-align: left;
+}
+
+[lang="en"] .modal-header .close,
+[dir="ltr"] .modal-header .close {
+    float: right;
+    margin-left: 0;
+    margin-right: -2px;
+}
+
+/* Alert adjustments for LTR */
+[lang="en"] .alert,
+[dir="ltr"] .alert {
+    text-align: left;
+}
+
+[lang="en"] .alert .close,
+[dir="ltr"] .alert .close {
+    float: right;
+    margin-left: 0;
+    margin-right: -21px;
+}
+
+/* Card adjustments for LTR */
+[lang="en"] .card-header,
+[lang="en"] .card-body,
+[lang="en"] .card-footer,
+[dir="ltr"] .card-header,
+[dir="ltr"] .card-body,
+[dir="ltr"] .card-footer {
+    text-align: left;
+}
+
+/* List adjustments for LTR */
+[lang="en"] .list-group-item,
+[dir="ltr"] .list-group-item {
+    text-align: left;
+}
+
+[lang="en"] .list-group-item .badge,
+[dir="ltr"] .list-group-item .badge {
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Progress bar adjustments for LTR */
+[lang="en"] .progress,
+[dir="ltr"] .progress {
+    direction: ltr;
+}
+
+[lang="en"] .progress-bar,
+[dir="ltr"] .progress-bar {
+    float: left;
+}
+
+/* Tab adjustments for LTR */
+[lang="en"] .nav-tabs,
+[dir="ltr"] .nav-tabs {
+    text-align: left;
+}
+
+[lang="en"] .nav-tabs li,
+[dir="ltr"] .nav-tabs li {
+    float: left;
+    margin-right: 2px;
+    margin-left: 0;
+}
+
+[lang="en"] .nav-tabs li:last-child,
+[dir="ltr"] .nav-tabs li:last-child {
+    margin-right: 0;
+}
+
+/* Input group adjustments for LTR */
+[lang="en"] .input-group-addon:first-child,
+[dir="ltr"] .input-group-addon:first-child {
+    border-right: 0;
+    border-left: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+[lang="en"] .input-group-addon:last-child,
+[dir="ltr"] .input-group-addon:last-child {
+    border-left: 0;
+    border-right: 1px solid #ccc;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Language selector specific adjustments */
+[lang="en"] .language-selector-container,
+[dir="ltr"] .language-selector-container {
+    text-align: left;
+}
+
+[lang="en"] .language-dropdown,
+[dir="ltr"] .language-dropdown {
+    left: 0;
+    right: auto;
+}
+
+[lang="en"] .language-option,
+[dir="ltr"] .language-option {
+    text-align: left;
+}
+
+[lang="en"] .language-flag,
+[dir="ltr"] .language-flag {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Typography adjustments for English */
+[lang="en"] h1, [lang="en"] h2, [lang="en"] h3, 
+[lang="en"] h4, [lang="en"] h5, [lang="en"] h6,
+[dir="ltr"] h1, [dir="ltr"] h2, [dir="ltr"] h3, 
+[dir="ltr"] h4, [dir="ltr"] h5, [dir="ltr"] h6 {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[lang="en"] p, [lang="en"] div, [lang="en"] span,
+[dir="ltr"] p, [dir="ltr"] div, [dir="ltr"] span {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Number and date formatting for English */
+[lang="en"] .number,
+[lang="en"] .date,
+[lang="en"] .time,
+[dir="ltr"] .number,
+[dir="ltr"] .date,
+[dir="ltr"] .time {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* Search box adjustments for LTR */
+[lang="en"] .search-box,
+[dir="ltr"] .search-box {
+    text-align: left;
+}
+
+[lang="en"] .search-box input,
+[dir="ltr"] .search-box input {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+[lang="en"] .search-box .search-icon,
+[dir="ltr"] .search-box .search-icon {
+    left: 10px;
+    right: auto;
+}
+
+/* Footer adjustments for LTR */
+[lang="en"] .footer,
+[dir="ltr"] .footer {
+    text-align: left;
+}
+
+[lang="en"] .footer .footer-links,
+[dir="ltr"] .footer .footer-links {
+    text-align: left;
+}
+
+[lang="en"] .footer .footer-links li,
+[dir="ltr"] .footer .footer-links li {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+/* Social media icons for LTR */
+[lang="en"] .social-icons,
+[dir="ltr"] .social-icons {
+    text-align: left;
+}
+
+[lang="en"] .social-icons li,
+[dir="ltr"] .social-icons li {
+    float: left;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Comment system adjustments for LTR */
+[lang="en"] .comment,
+[dir="ltr"] .comment {
+    text-align: left;
+}
+
+[lang="en"] .comment .comment-author,
+[dir="ltr"] .comment .comment-author {
+    float: left;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+[lang="en"] .comment .comment-content,
+[dir="ltr"] .comment .comment-content {
+    margin-left: 60px;
+    margin-right: 0;
+}
+
+/* User profile adjustments for LTR */
+[lang="en"] .user-profile,
+[dir="ltr"] .user-profile {
+    text-align: left;
+}
+
+[lang="en"] .user-avatar,
+[dir="ltr"] .user-avatar {
+    float: left;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+[lang="en"] .user-info,
+[dir="ltr"] .user-info {
+    margin-left: 80px;
+    margin-right: 0;
+}
+
+/* Responsive adjustments for English */
+@media (max-width: 768px) {
+    [lang="en"] .nav-menu li,
+    [dir="ltr"] .nav-menu li {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    [lang="en"] .main-content,
+    [dir="ltr"] .main-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    [lang="en"] .sidebar,
+    [dir="ltr"] .sidebar {
+        position: relative;
+        width: 100%;
+        left: auto;
+        right: auto;
+    }
+}
+
+/* Print styles for English */
+@media print {
+    [lang="en"], [dir="ltr"] {
+        direction: ltr;
+        text-align: left;
+    }
+    
+    [lang="en"] .no-print,
+    [dir="ltr"] .no-print {
+        display: none !important;
+    }
+}
+
