@@ -1,0 +1,45 @@
+.layout {
+display: flex;
+width: 100%;
+min-height: 100vh;
+}
+
+.sidebar {
+width: 250px;
+background: #f1f1f1;
+padding: 10px;
+}
+
+.content {
+flex: 1;
+padding: 20px;
+background: #fff;
+}
+
+.sidebar.left {
+order: 1;
+}
+
+.content {
+order: 2;
+}
+
+.sidebar.right {
+order: 3;
+}
+
+.sidebar-item {
+margin-bottom: 10px;
+}
+
+.sidebar-ad {
+margin-bottom: 10px;
+}
+
+/* 🔥 إعلانات داخل الموضوع */
+.ad-box {
+margin: 15px 0;
+padding: 10px;
+background: #fafafa;
+border: 1px dashed #aaa;
+}

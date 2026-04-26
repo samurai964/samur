@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Cairo', sans-serif;
+background: var(--bg, #f1f5f9);
+color: var(--text, #1e293b);
+}
+
+/* HEADER */
+.main-header {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+height: 60px;
+background: var(--header-bg, #0f172a);
+display: flex;
+align-items: center;
+padding: 0 20px;
+z-index: 999;
+}
+
+.main-header a {
+color: #fff;
+margin-left: 15px;
+text-decoration: none;
+}
+
+/* LAYOUT */
+.page-wrapper {
+display: flex;
+grid-template-columns: 180px 1fr 180px;
+margin-top: 110px;
+gap: 20px;
+padding: 10px;
+}
+
+.sidebar {
+background: var(--sidebar-bg, #fff);
+padding: 12px;
+border-radius: var(--radius, 10px);
+border: 1px solid #eee;
+width: 220px;
+}
+
+.sidebar ul {
+list-style: none;
+}
+
+.container {
+background: var(--post-bg, #fff);
+padding: 15px;
+border-radius: var(--radius, 10px);
+}
+
+/* FOOTER */
+.main-footer {
+text-align: center;
+padding: 15px;
+background: var(--footer-bg, #111827);
+color: #fff;
+}
+
+.main-content {
+flex: 1;
+background: var(--post-bg, #fff);
+padding: 20px;
+min-height: 400px;
+border-radius: var(--radius, 10px);
+}
+
+/* ===== الشريط المتحرك (معدل فقط هنا) ===== */
+.enhanced-ticker {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(90deg, var(--header-bg, #0f172a), var(--secondary, #1e293b));
+color: #fff;
+padding: 10px 0;
+border-bottom: 1px solid #222;
+}
+
+/* المسار */
+.enhanced-ticker-track {
+display: flex;
+gap: 60px;
+white-space: nowrap;
+width: max-content;
+
+/* 🔥 حركة مستمرة بدون تقطيع */
+animation: tickerLoop 20s linear infinite;
+}
+
+/* العنصر */
+.enhanced-ticker-item {
+flex-shrink: 0;
+font-size: 14px;
+}
+
+/* 🔥 حركة احترافية مستمرة */
+@keyframes tickerLoop {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(-50%);
+}
+}
+
+/* توقف عند hover */
+.enhanced-ticker:hover .enhanced-ticker-track {
+animation-play-state: paused;
+}
+
+/* اتجاه من اليمين إلى اليسار */
+@keyframes tickerRTL {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+
+/* اتجاه من اليسار إلى اليمين */
+@keyframes tickerLTR {
+0% { transform: translateX(-50%); }
+100% { transform: translateX(0); }
+}

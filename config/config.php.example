@@ -1,0 +1,104 @@
+<?php
+// Final Max CMS - Database Configuration
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'final_max_cms');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_PREFIX', 'fmc_');
+
+// Site Configuration
+define('SITE_NAME', 'Final Max CMS');
+define('SITE_URL', 'http://localhost/final_max_cms_php');
+define('ADMIN_EMAIL', 'admin@example.com');
+
+// Security Keys - MUST be changed for production
+define('AUTH_KEY', 'YOUR_AUTH_KEY_HERE');
+define('SECURE_AUTH_KEY', 'YOUR_SECURE_AUTH_KEY_HERE');
+define('LOGGED_IN_KEY', 'YOUR_LOGGED_IN_KEY_HERE');
+define('NONCE_KEY', 'YOUR_NONCE_KEY_HERE');
+
+// Other Settings
+define('DEBUG_MODE', true); // Set to false in production
+define('TIMEZONE', 'Asia/Riyadh');
+
+// Error Reporting
+if (DEBUG_MODE) {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+} else {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+}
+
+// Database Connection (PDO)
+try {
+    $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4';
+    $options = [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,
+    ];
+    $pdo = new PDO($dsn, DB_USER, DB_PASS, $options);
+} catch (PDOException $e) {
+    die('Database connection failed: ' . $e->getMessage());
+}
+
+// Load functions and classes
+require_once ROOT_PATH . '/core/functions.php';
+require_once ROOT_PATH . '/core/Router.php';
+require_once ROOT_PATH . '/core/Controller.php';
+require_once ROOT_PATH . '/core/Model.php';
+
+// Start session if not already started
+require_once ROOT_PATH . 
+    '/core/Session.php';
+
+// Set default timezone
+date_default_timezone_set(TIMEZONE);
+
+// Define constants for paths
+define('ASSETS_URL', SITE_URL . '/assets');
+define('UPLOADS_URL', SITE_URL . '/assets/uploads');
+
+// Global variables for database and site settings
+$GLOBALS['pdo'] = $pdo;
+$GLOBALS['config'] = [
+    'site_name' => SITE_NAME,
+    'site_url' => SITE_URL,
+    'admin_email' => ADMIN_EMAIL,
+    'db_prefix' => DB_PREFIX,
+    'debug_mode' => DEBUG_MODE,
+];
+
+// Include module models and controllers (example)
+// require_once ROOT_PATH . '/modules/auth/AuthModel.php';
+// require_once ROOT_PATH . '/modules/auth/AuthController.php';
+
+// Define the default controller and action
+define('DEFAULT_CONTROLLER', 'Home');
+define('DEFAULT_ACTION', 'index');
+
+// Autoload classes (basic example, can be replaced by Composer)
+spl_autoload_register(function ($class) {
+    $paths = [
+        ROOT_PATH . '/core/',
+        ROOT_PATH . '/modules/auth/',
+        ROOT_PATH . '/modules/content/',
+        ROOT_PATH . '/modules/services/',
+        ROOT_PATH . '/modules/courses/',
+        ROOT_PATH . '/modules/ecommerce/',
+        ROOT_PATH . '/modules/crm/',
+        ROOT_PATH . '/modules/ads/', // For advertising campaigns
+    ];
+
+    foreach ($paths as $path) {
+        $file = $path . $class . '.php';
+        if (file_exists($file)) {
+            require_once $file;
+            return;
+        }
+    }
+});
+
+?>
+
